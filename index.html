@@ -38,6 +38,10 @@
     }
   }
   setInterval(draw, 20);
+
+  const audio = new Audio();
+       audio.src="./omg.mp3";
+
   </script>
 
     <header class="header">
@@ -78,7 +82,7 @@
                 <a href="#contact" class="btn">Contact</a>
                 </div>  
              </div>
-             <div class="home-img">
+             <div class="home-img" onclick="audio.play()">
                 <img src="osaka.jpg" alt="">
              </div>
     </section>
@@ -91,6 +95,8 @@
 
 
 
-    <script src="script.js"></script>
+    <script src="script.js">
+       
+    </script>
 </body>
 </html>
